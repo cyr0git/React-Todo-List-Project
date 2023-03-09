@@ -1,0 +1,36 @@
+{
+  "tasks": [
+      {
+        "id": 1,
+        "text": "Doctors Appointment",
+        "day": "Feb 5th at 2:30pm",
+        "reminder": true
+      },
+      {
+        "id": 2,
+        "text": "Meeting at school",
+        "day": "Feb 6th at 1:30pm",
+        "reminder": true
+      },
+      {
+        "id": 3,
+        "text": "Food Shopping",
+        "day": "Feb 5th at 2:30pm",
+        "reminder": false
+      }
+    
+  ]
+}
+
+npm start //to start dev build
+
+npm run build //for building static website folder
+
+serve -s build -p 8000 //serving the build folder on port 8000
+
+//for JSON Server..
+add this script on package.json 
+"server": "json-server --watch db.json --port 5000"
+then we can use command.
+npm run server
+or use the command without script json-server --watch db.json --port 5000
